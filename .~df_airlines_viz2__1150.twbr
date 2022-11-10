@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.1017.0914                               -->
+<workbook original-version='18.1' source-build='2022.2.3 (20222.22.1017.0914)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='df_airlines_viz2' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='df_airlines_viz2' inline='true' name='federated.05iezsw1gp7e0511u17je16z8ebv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df_airlines_viz2' name='textscan.0ob8t7x08epr6a1860o461xxgz83'>
+            <connection class='textscan' directory='/Users/norielbargo/Downloads/W261/Full Data' filename='df_airlines_viz2.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0ob8t7x08epr6a1860o461xxgz83' name='df_airlines_viz2.csv' table='[df_airlines_viz2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='DEP_TIME_BLK' ordinal='0' />
+            <column datatype='integer' name='sum(DEP_DELAY)' ordinal='1' />
+            <column datatype='integer' name='sum(CARRIER_DELAY)' ordinal='2' />
+            <column datatype='integer' name='sum(WEATHER_DELAY)' ordinal='3' />
+            <column datatype='integer' name='sum(NAS_DELAY)' ordinal='4' />
+            <column datatype='integer' name='sum(SECURITY_DELAY)' ordinal='5' />
+            <column datatype='integer' name='sum(LATE_AIRCRAFT_DELAY)' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0ob8t7x08epr6a1860o461xxgz83' name='df_airlines_viz2.csv' table='[df_airlines_viz2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='DEP_TIME_BLK' ordinal='0' />
+            <column datatype='integer' name='sum(DEP_DELAY)' ordinal='1' />
+            <column datatype='integer' name='sum(CARRIER_DELAY)' ordinal='2' />
+            <column datatype='integer' name='sum(WEATHER_DELAY)' ordinal='3' />
+            <column datatype='integer' name='sum(NAS_DELAY)' ordinal='4' />
+            <column datatype='integer' name='sum(SECURITY_DELAY)' ordinal='5' />
+            <column datatype='integer' name='sum(LATE_AIRCRAFT_DELAY)' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[df_airlines_viz2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEP_TIME_BLK</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DEP_TIME_BLK]</local-name>
+            <parent-name>[df_airlines_viz2.csv]</parent-name>
+            <remote-alias>DEP_TIME_BLK</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_airlines_viz2.csv_A7CBA3BD8BE847CBB526ACF2F3B961B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sum(DEP_DELAY)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sum(DEP_DELAY)]</local-name>
+            <parent-name>[df_airlines_viz2.csv]</parent-name>
+            <remote-alias>sum(DEP_DELAY)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_airlines_viz2.csv_A7CBA3BD8BE847CBB526ACF2F3B961B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sum(CARRIER_DELAY)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sum(CARRIER_DELAY)]</local-name>
+            <parent-name>[df_airlines_viz2.csv]</parent-name>
+            <remote-alias>sum(CARRIER_DELAY)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_airlines_viz2.csv_A7CBA3BD8BE847CBB526ACF2F3B961B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sum(WEATHER_DELAY)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sum(WEATHER_DELAY)]</local-name>
+            <parent-name>[df_airlines_viz2.csv]</parent-name>
+            <remote-alias>sum(WEATHER_DELAY)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_airlines_viz2.csv_A7CBA3BD8BE847CBB526ACF2F3B961B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sum(NAS_DELAY)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sum(NAS_DELAY)]</local-name>
+            <parent-name>[df_airlines_viz2.csv]</parent-name>
+            <remote-alias>sum(NAS_DELAY)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_airlines_viz2.csv_A7CBA3BD8BE847CBB526ACF2F3B961B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sum(SECURITY_DELAY)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sum(SECURITY_DELAY)]</local-name>
+            <parent-name>[df_airlines_viz2.csv]</parent-name>
+            <remote-alias>sum(SECURITY_DELAY)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_airlines_viz2.csv_A7CBA3BD8BE847CBB526ACF2F3B961B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sum(LATE_AIRCRAFT_DELAY)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sum(LATE_AIRCRAFT_DELAY)]</local-name>
+            <parent-name>[df_airlines_viz2.csv]</parent-name>
+            <remote-alias>sum(LATE_AIRCRAFT_DELAY)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_airlines_viz2.csv_A7CBA3BD8BE847CBB526ACF2F3B961B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Dep Time Blk' datatype='string' name='[DEP_TIME_BLK]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='df_airlines_viz2.csv' datatype='table' name='[__tableau_internal_object_id__].[df_airlines_viz2.csv_A7CBA3BD8BE847CBB526ACF2F3B961B9]' role='measure' type='quantitative' />
+      <column caption='sum(CARRIER DELAY)' datatype='integer' name='[sum(CARRIER_DELAY)]' role='measure' type='quantitative' />
+      <column caption='sum(DEP DELAY)' datatype='integer' name='[sum(DEP_DELAY)]' role='measure' type='quantitative' />
+      <column caption='sum(LATE AIRCRAFT DELAY)' datatype='integer' name='[sum(LATE_AIRCRAFT_DELAY)]' role='measure' type='quantitative' />
+      <column caption='sum(NAS DELAY)' datatype='integer' name='[sum(NAS_DELAY)]' role='measure' type='quantitative' />
+      <column caption='sum(SECURITY DELAY)' datatype='integer' name='[sum(SECURITY_DELAY)]' role='measure' type='quantitative' />
+      <column caption='sum(WEATHER DELAY)' datatype='integer' name='[sum(WEATHER_DELAY)]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/norielbargo/Documents/My Tableau Repository/Datasources/df_airlines_viz2.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='11/08/2022 05:09:50 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='df_airlines_viz2' increment-value='%null%' refresh-type='create' rows-inserted='19' timestamp-start='2022-11-08 05:09:50.757' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>DEP_TIME_BLK</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DEP_TIME_BLK]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DEP_TIME_BLK</remote-alias>
+              <ordinal>0</ordinal>
+              <family>df_airlines_viz2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_airlines_viz2.csv_A7CBA3BD8BE847CBB526ACF2F3B961B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sum(DEP_DELAY)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sum(DEP_DELAY)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sum(DEP_DELAY)</remote-alias>
+              <ordinal>1</ordinal>
+              <family>df_airlines_viz2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_airlines_viz2.csv_A7CBA3BD8BE847CBB526ACF2F3B961B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sum(CARRIER_DELAY)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sum(CARRIER_DELAY)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sum(CARRIER_DELAY)</remote-alias>
+              <ordinal>2</ordinal>
+              <family>df_airlines_viz2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_airlines_viz2.csv_A7CBA3BD8BE847CBB526ACF2F3B961B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sum(WEATHER_DELAY)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sum(WEATHER_DELAY)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sum(WEATHER_DELAY)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>df_airlines_viz2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_airlines_viz2.csv_A7CBA3BD8BE847CBB526ACF2F3B961B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sum(NAS_DELAY)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sum(NAS_DELAY)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sum(NAS_DELAY)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>df_airlines_viz2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_airlines_viz2.csv_A7CBA3BD8BE847CBB526ACF2F3B961B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sum(SECURITY_DELAY)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sum(SECURITY_DELAY)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sum(SECURITY_DELAY)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>df_airlines_viz2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_airlines_viz2.csv_A7CBA3BD8BE847CBB526ACF2F3B961B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sum(LATE_AIRCRAFT_DELAY)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sum(LATE_AIRCRAFT_DELAY)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sum(LATE_AIRCRAFT_DELAY)</remote-alias>
+              <ordinal>6</ordinal>
+              <family>df_airlines_viz2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_airlines_viz2.csv_A7CBA3BD8BE847CBB526ACF2F3B961B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='df_airlines_viz2.csv' id='df_airlines_viz2.csv_A7CBA3BD8BE847CBB526ACF2F3B961B9'>
+            <properties context=''>
+              <relation connection='textscan.0ob8t7x08epr6a1860o461xxgz83' name='df_airlines_viz2.csv' table='[df_airlines_viz2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='DEP_TIME_BLK' ordinal='0' />
+                  <column datatype='integer' name='sum(DEP_DELAY)' ordinal='1' />
+                  <column datatype='integer' name='sum(CARRIER_DELAY)' ordinal='2' />
+                  <column datatype='integer' name='sum(WEATHER_DELAY)' ordinal='3' />
+                  <column datatype='integer' name='sum(NAS_DELAY)' ordinal='4' />
+                  <column datatype='integer' name='sum(SECURITY_DELAY)' ordinal='5' />
+                  <column datatype='integer' name='sum(LATE_AIRCRAFT_DELAY)' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sum of Depature Delay Causes by Time Block (2015-2021)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_airlines_viz2' name='federated.05iezsw1gp7e0511u17je16z8ebv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05iezsw1gp7e0511u17je16z8ebv'>
+            <column caption='Dep Time Blk' datatype='string' name='[DEP_TIME_BLK]' role='dimension' type='nominal' />
+            <column-instance column='[DEP_TIME_BLK]' derivation='None' name='[none:DEP_TIME_BLK:nk]' pivot='key' type='nominal' />
+            <column caption='sum(CARRIER DELAY)' datatype='integer' name='[sum(CARRIER_DELAY)]' role='measure' type='quantitative' />
+            <column caption='sum(LATE AIRCRAFT DELAY)' datatype='integer' name='[sum(LATE_AIRCRAFT_DELAY)]' role='measure' type='quantitative' />
+            <column caption='sum(NAS DELAY)' datatype='integer' name='[sum(NAS_DELAY)]' role='measure' type='quantitative' />
+            <column caption='sum(SECURITY DELAY)' datatype='integer' name='[sum(SECURITY_DELAY)]' role='measure' type='quantitative' />
+            <column caption='sum(WEATHER DELAY)' datatype='integer' name='[sum(WEATHER_DELAY)]' role='measure' type='quantitative' />
+            <column-instance column='[sum(CARRIER_DELAY)]' derivation='Sum' name='[sum:sum(CARRIER_DELAY):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sum(LATE_AIRCRAFT_DELAY)]' derivation='Sum' name='[sum:sum(LATE_AIRCRAFT_DELAY):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sum(NAS_DELAY)]' derivation='Sum' name='[sum:sum(NAS_DELAY):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sum(SECURITY_DELAY)]' derivation='Sum' name='[sum:sum(SECURITY_DELAY):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sum(WEATHER_DELAY)]' derivation='Sum' name='[sum:sum(WEATHER_DELAY):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.05iezsw1gp7e0511u17je16z8ebv].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.05iezsw1gp7e0511u17je16z8ebv].[sum:sum(CARRIER_DELAY):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.05iezsw1gp7e0511u17je16z8ebv].[sum:sum(LATE_AIRCRAFT_DELAY):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.05iezsw1gp7e0511u17je16z8ebv].[sum:sum(NAS_DELAY):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.05iezsw1gp7e0511u17je16z8ebv].[sum:sum(SECURITY_DELAY):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.05iezsw1gp7e0511u17je16z8ebv].[sum:sum(WEATHER_DELAY):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.05iezsw1gp7e0511u17je16z8ebv].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.05iezsw1gp7e0511u17je16z8ebv].[Multiple Values]' scope='rows' value='Causes of Delay (in Minutes)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.05iezsw1gp7e0511u17je16z8ebv].[:Measure Names]' />
+              <text column='[federated.05iezsw1gp7e0511u17je16z8ebv].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05iezsw1gp7e0511u17je16z8ebv].[Multiple Values]</rows>
+        <cols>[federated.05iezsw1gp7e0511u17je16z8ebv].[none:DEP_TIME_BLK:nk]</cols>
+      </table>
+      <simple-id uuid='{CA36C171-2AA0-46BA-A699-07D623531C39}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sum of Depature Delay by Time Block (2015-2021)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_airlines_viz2' name='federated.05iezsw1gp7e0511u17je16z8ebv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05iezsw1gp7e0511u17je16z8ebv'>
+            <column caption='Dep Time Blk' datatype='string' name='[DEP_TIME_BLK]' role='dimension' type='nominal' />
+            <column-instance column='[DEP_TIME_BLK]' derivation='None' name='[none:DEP_TIME_BLK:nk]' pivot='key' type='nominal' />
+            <column caption='sum(DEP DELAY)' datatype='integer' name='[sum(DEP_DELAY)]' role='measure' type='quantitative' />
+            <column-instance column='[sum(DEP_DELAY)]' derivation='Sum' name='[sum:sum(DEP_DELAY):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.05iezsw1gp7e0511u17je16z8ebv].[sum:sum(DEP_DELAY):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05iezsw1gp7e0511u17je16z8ebv].[sum:sum(DEP_DELAY):qk]</rows>
+        <cols>[federated.05iezsw1gp7e0511u17je16z8ebv].[none:DEP_TIME_BLK:nk]</cols>
+      </table>
+      <simple-id uuid='{A16B7D00-AAC0-4F79-8338-4B4D06003F02}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.05iezsw1gp7e0511u17je16z8ebv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0BFDC731-15F0-4753-B1B2-6F3A836CA77E}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ECEBCC64-5AEF-4285-8075-AF39F57F865B}' />
+    </window>
+  </windows>
+</workbook>
